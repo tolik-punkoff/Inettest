@@ -35,15 +35,11 @@
 
 Первые два поля (операция и адрес) являются обязательными. Если они не будут указаны, скрипт будет прерван на строке с ошибкой:
 
-`...
-
-Ping|192.168.0.1|Main router|break #Main router ping
-
-ping|[ДАННЫЕ УДАЛЕНЫ]|Provider IP|break
-
-getp
-
-...`
+`...`
+`Ping|192.168.0.1|Main router|break #Main router ping`
+`ping|[ДАННЫЕ УДАЛЕНЫ]|Provider IP|break`
+`getp`
+`...`
 
 ![screen](https://github.com/tolik-punkoff/Inettest/blob/main/screens/inettest-config-error.png?raw=true)
 
