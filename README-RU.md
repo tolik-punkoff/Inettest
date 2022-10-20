@@ -36,9 +36,13 @@
 Первые два поля (операция и адрес) являются обязательными. Если они не будут указаны, скрипт будет прерван на строке с ошибкой:
 
 `...`
+
 `Ping|192.168.0.1|Main router|break #Main router ping`
+
 `ping|[ДАННЫЕ УДАЛЕНЫ]|Provider IP|break`
+
 `getp`
+
 `...`
 
 ![screen](https://github.com/tolik-punkoff/Inettest/blob/main/screens/inettest-config-error.png?raw=true)
@@ -51,39 +55,39 @@
 
 Если в первом поле будет неверно указанный код операции, то скрипт его проигнорирует, выдав соответствующее сообщение, продолжит выполнять другие операции, но завершится с ошибкой:
 
-`Ping|192.168.0.1|Main router|break #Main router ping
+`Ping|192.168.0.1|Main router|break #Main router ping`
 
-ping|[ДАННЫЕ УДАЛЕНЫ]|Provider IP|break
+`ping|[ДАННЫЕ УДАЛЕНЫ]|Provider IP|break`
 
-getp|[ДАННЫЕ УДАЛЕНЫ]|Provider page
+`getp|[ДАННЫЕ УДАЛЕНЫ]|Provider page`
 
-1234|[ДАННЫЕ УДАЛЕНЫ]|VPN Server IP|break
+`1234|[ДАННЫЕ УДАЛЕНЫ]|VPN Server IP|break`
 
-ping|8.8.8.8|Internet IP|break
+`ping|8.8.8.8|Internet IP|break`
 
-getp|google.com|Internet page|break`
+`getp|google.com|Internet page|break`
 
 ![screen](https://github.com/tolik-punkoff/Inettest/blob/main/screens/inettest-unknow-operation.png?raw=true)
 
 Для разделения полей используется символ `|`
 
-В конфигурационном файле можно использовать комментарии, начинающиеся с символа #, все, что находится после этого символа - игнорируется. Пустые строки также игнорируются.
+В конфигурационном файле можно использовать комментарии, начинающиеся с символа `#`, все, что находится после этого символа - игнорируется. Пустые строки также игнорируются.
 
 ## Пример конфигурационного файла (без данных)
 
-`#inettest.cfg example
+`#inettest.cfg example`
 
-Ping|192.168.0.1|Main router|break #Main router ping
+`Ping|192.168.0.1|Main router|break #Main router ping`
 
-ping|x.x.x.x|Provider IP|break #Change x.x.x.x to your provider ip
+`ping|x.x.x.x|Provider IP|break #Change x.x.x.x to your provider ip`
 
-getp|myprovider.net|Provider site page|skip #change myprovider.net to real site your provider
+`getp|myprovider.net|Provider site page|skip #change myprovider.net to real site your provider`
 
-ping|x.x.x.x|VPN Server IP|break #Change x.x.x.x to real VPN provider IP
+`ping|x.x.x.x|VPN Server IP|break #Change x.x.x.x to real VPN provider IP`
 
-ping|8.8.8.8|Internet IP|break
+`ping|8.8.8.8|Internet IP|break`
 
-getp|google.com|Internet page|break`
+`getp|google.com|Internet page|break`
 
 ## Переменные скрипта
 
@@ -121,17 +125,17 @@ getp|google.com|Internet page|break`
 
 Конфиг:
 
-`Ping|192.168.0.1|Main router|break #Main router ping
+`Ping|192.168.0.1|Main router|break #Main router ping`
 
-ping|[ДАННЫЕ УДАЛЕНЫ]|Provider IP|skip
+`ping|[ДАННЫЕ УДАЛЕНЫ]|Provider IP|skip`
 
-getp|[ДАННЫЕ УДАЛЕНЫ]Provider page|skip
+`getp|[ДАННЫЕ УДАЛЕНЫ]Provider page|skip`
 
-ping|[ДАННЫЕ УДАЛЕНЫ]|VPN Server IP|break
+`ping|[ДАННЫЕ УДАЛЕНЫ]|VPN Server IP|break`
 
-ping|8.8.8.8|Internet IP|break
+`ping|8.8.8.8|Internet IP|break`
 
-getp|google.com|Internet page|break`
+`getp|google.com|Internet page|break`
 
 Результат:
 
