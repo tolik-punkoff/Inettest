@@ -11,7 +11,7 @@
 
 ![screen](https://github.com/tolik-punkoff/Inettest/blob/main/screens/inettest-main.png?raw=true)
 
-For sound alerts, [PC-speaker is configured and the beep utility is installed](https://tolik-punkoff.com/2018/01/14/pc-speaker-v-linux-ili-kak-sdelat-beep-iz- konsoli-vstroennym-dinamikom-pk/) ([copy](https://lj.rossia.org/users/hex_laden/380240.html)).
+For sound alerts, [PC-speaker is configured and the beep utility is installed](https://tolik-punkoff.com/2018/01/14/pc-speaker-v-linux-ili-kak-sdelat-beep-iz-konsoli-vstroennym-dinamikom-pk/) ([copy](https://lj.rossia.org/users/hex_laden/380240.html)).
 
 The sequence of operations is specified in the configuration file.
 
