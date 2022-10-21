@@ -97,7 +97,7 @@ The script has no command line parameters, the main settings are made through th
 
 `CONFIG` - path to the configuration file, for example `CONFIG="./inettest.cfg"`. If the configuration file is not found, the script will throw an error:
 
-`CRITICAL ERROR: Config file ./inettest.cf not exist!`
+`CRITICAL ERROR: Config file ./inettest.cfg not exist!`
 
 `NOCOLOR` - if the value is `0`, enable output of colored text to the console, if `1` - disable. Default `0`
 
