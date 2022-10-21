@@ -96,7 +96,7 @@
 
 `CONFIG` - путь к конфигурационному файлу, например `CONFIG="./inettest.cfg"`. Если конфигурационный файл не будет найден, скрипт выдаст ошибку:
 
-`CRITICAL ERROR: Config file ./inettest.cf not exist!` 
+`CRITICAL ERROR: Config file ./inettest.cfg not exist!` 
 
 `NOCOLOR` - если значение равно `0`, включить вывод цветного текста на консоль, если `1` - отключить. По умолчанию `0`
 
